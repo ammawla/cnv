@@ -1,0 +1,12 @@
+@namespace("com.getcolor.cnv.avro")
+protocol CNV {
+
+record MedianSample {
+  union { null, string } referenceName = null;
+  union { null, long } position = null;
+  union { null, double } coverage = null;
+  union { null, double } gcRatio = null;
+  union { null, double } baitComp = null;
+  union { null, int } numberOfSamples = null;
+}
+}
